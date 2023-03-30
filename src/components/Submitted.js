@@ -1,0 +1,15 @@
+import React from 'react'
+import './Submitted.css'
+
+const Submitted = () => {
+  return (
+    <div className='submitContainer'>
+        <div className='check'> </div>
+        <h1>Application Submitted</h1>
+        <p id='thanks'>Thanks for your interest!</p>
+        <p>Our review team will review your application and call you for interview</p>
+    </div>
+  )
+}
+
+export default Submitted

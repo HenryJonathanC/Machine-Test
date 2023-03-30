@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Container from './components/Container';
+import Form  from './components/Form';
+import FormFinal from './components/FormFinal';
+import Submitted from './components/Submitted';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+        <Routes>
+          <Route path="/" element={<Form />} />
+          <Route path="/job-selection" element={<FormFinal />}  />
+          <Route path="application-submitted" element={<Submitted />} />
+        </Routes>
+      {/* <Container />
+      <Form /> */}
+      {/* <FormFinal /> */}
+      {/* <Submitted /> */}
     </div>
   );
 }

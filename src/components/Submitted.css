@@ -1,0 +1,21 @@
+.submitContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+
+.check{
+    background-image: url('../images/big-green-check.png');
+    height: 10rem;
+    width: 10rem;
+    background-size: contain;
+}
+
+#thanks{
+    margin-bottom: 0;
+}
+
